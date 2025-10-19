@@ -11,8 +11,8 @@
 
 <body>
     <!-- select box -->
-    <H1>🤩HAPPY TEACHERS DAY !!!🥳</H1>
-    <embed src="tic-tac-sound.wav" loop="true" autostart="true" hidden="true">
+    <H1>📚 Celebrate Teacher's Day with Tic Tac Toe! 🎉</H1>
+    <embed src="tic-tac-sound.wav" loop="true" autostart="true" hidden="true" >
 
     <div class="select-box">
         <header>Tic Tac Toe</header>
@@ -62,9 +62,23 @@
         <div class="btn"><button>Replay</button></div>
     </div>
     <div class="scoreboard">
-        <div>Teacher: <span id="teacherScore">0</span></div>
-        <div>Student: <span id="studentScore">0</span></div>
+    <h3>🏆 Scoreboard</h3>
+    <div class="score-row">
+        <div class="score-item">
+            <span>👨‍🏫 Teacher</span>
+            <span class="score-value" id="teacherScore">0</span>
+        </div>
+        <div class="score-item">
+            <span>👨‍🎓 Student</span>
+            <span class="score-value" id="studentScore">0</span>
+        </div>
+        <div class="score-item">
+            <span>🤝 Draws</span>
+            <span class="score-value" id="drawScore">0</span>
+        </div>
     </div>
+    <button class="reset-btn" onclick="resetScores()">Reset Scores</button>
+</div>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap" rel="stylesheet">
     <div class="turn-indicator">Player X’s Turn</div>
  
